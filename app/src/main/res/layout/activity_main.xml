@@ -8,6 +8,7 @@
 
     <RelativeLayout
         android:padding="5dp"
+        android:layout_margin="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#b3f9f8">
@@ -16,7 +17,7 @@
             android:layout_margin="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
+            android:textSize="15sp"
             android:textColor="#001"
             android:text="Source:"/>
         <Spinner
@@ -32,7 +33,7 @@
             android:layout_margin="20dp"
             android:layout_below="@+id/source_name"
             android:text="Destination"
-            android:textSize="20sp"
+            android:textSize="15sp"
             android:textColor="#001"/>
         <Spinner
             android:id="@+id/destination_name_spinner"
@@ -46,6 +47,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
+            android:onClick="showMap"
             android:layout_below="@+id/destination_name"
             android:layout_centerHorizontal="true"
             android:text="Show"/>
@@ -54,6 +56,7 @@
     <RelativeLayout
         android:background="#98f9aa"
         android:padding="5dp"
+        android:layout_margin="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="bottom"
@@ -63,7 +66,7 @@
             android:layout_margin="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
+            android:textSize="15sp"
             android:textColor="#001"
             android:text="Source:"/>
         <Spinner
@@ -79,7 +82,7 @@
             android:layout_margin="20dp"
             android:layout_below="@+id/value_source_name"
             android:text="Destination"
-            android:textSize="20sp"
+            android:textSize="15sp"
             android:textColor="#001"/>
         <Spinner
             android:id="@+id/value_destination_name_spinner"
@@ -94,7 +97,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
             android:text="Time(min)"
-            android:textSize="20sp"
+            android:textSize="15sp"
             android:textColor="#001"
             android:layout_below="@id/value_destination_name"/>
         <EditText
@@ -109,6 +112,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
+            android:onClick="saveData"
             android:layout_below="@+id/value_text"
             android:layout_centerHorizontal="true"
             android:text="submit"/>
